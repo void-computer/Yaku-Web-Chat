@@ -86,6 +86,5 @@ io.on('connection', socket => {
 });
 
 const PORT = 8080 || process.env.PORT;
-const HOST = '192.168.0.8'
-server.listen(PORT, HOST, () => console.log(`Server is online and running on port ${PORT} `))
+server.listen(PORT, () => console.log(`Server is online and running on port ${PORT} `))
 
