@@ -28,9 +28,7 @@ io.on('connection', socket => {
     socket.on('joinRoom', ({ username, room }) => {
 
         const user = userJoin(socket.id, username, room);
-        var socketId = socket.id;
-        var clientIp = socket.request.connection.remoteAddress;
-        console.log(IP(`${user.username} has connected to the YCA with the ip of ${clientIp}`));
+    
         
         
         //Welcome current user
